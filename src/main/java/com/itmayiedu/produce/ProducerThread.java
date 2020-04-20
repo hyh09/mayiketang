@@ -24,13 +24,13 @@ public class ProducerThread implements  Runnable {
 
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName() + "生产者开始启动....");
+        System.out.println("###################"+Thread.currentThread().getName() + "生产者开始启动....");
         while (FLAG) {
             String data = count.incrementAndGet() + "";
             try {
                 boolean offer = blockingQueue.offer(data, 2, TimeUnit.SECONDS);
                 if (offer) {
-                    System.out.println(Thread.currentThread().getName() + ",生产队列" + data + "成功..");
+                    System.out.println("#########################"+Thread.currentThread().getName() + ",生产队列" + data + "成功..");
                 } else {
                     System.out.println(Thread.currentThread().getName() + ",生产队列" + data + "失败..");
                 }
