@@ -6,6 +6,7 @@
 
     <groupId>mayiketang03</groupId>
     <artifactId>mayiketang</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -19,6 +20,9 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>mayiketang0301</module>
+    </modules>
 
 
 </project>
