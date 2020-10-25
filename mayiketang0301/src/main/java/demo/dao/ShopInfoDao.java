@@ -14,4 +14,8 @@ public interface ShopInfoDao {
 
     Shopinfo selectByPrimaryKey(Long shopId);
 
+
+    Shopinfo selectByPrimaryKey001(Long shopId);
+
+
 }
