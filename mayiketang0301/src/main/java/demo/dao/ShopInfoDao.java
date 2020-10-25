@@ -18,4 +18,10 @@ public interface ShopInfoDao {
     Shopinfo selectByPrimaryKey001(Long shopId);
 
 
+    /***
+     *
+     *
+     * 我是0002提交的
+     */
+
 }
